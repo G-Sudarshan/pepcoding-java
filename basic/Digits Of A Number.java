@@ -24,11 +24,14 @@ import java.util.*;
     
     int power = 1;
     int temp = n;
+    
     while (temp >= 10) {
       temp /= 10;
       power *= 10;
     }
-   temp = n;
+    
+    temp = n;
+    
     while (power != 0) {
       int digit = temp / power;
       System.out.println(digit);
@@ -37,5 +40,5 @@ import java.util.*;
       power = power / 10;
     }
     
-     }
-    }
+  }
+}
